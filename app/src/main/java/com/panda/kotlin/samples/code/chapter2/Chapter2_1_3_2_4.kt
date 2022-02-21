@@ -13,8 +13,13 @@ class Chapter2_1_3_2_4 {
 
             printInt(num)
         }
-        printInt(-1)
-        printInt((-1) shr 2)
+
+        var negativeTest = -0b1111111111111111111111111111110
+        print("Binary of negativeTest is ${Integer.toBinaryString(negativeTest)}")
+        println(", Decimal is $negativeTest")
+        negativeTest = negativeTest shl 2
+        print("After shl 2, binary of negativeTest is ${Integer.toBinaryString(negativeTest)}")
+        println(", Decimal is $negativeTest")
     }
 
     private fun printInt(integer: Int) {

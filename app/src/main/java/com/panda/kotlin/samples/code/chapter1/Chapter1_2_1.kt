@@ -5,7 +5,7 @@ class Chapter1_2_1 {
 
     fun main() {
         val customer = Customer("Panda", "qqc.pearce@gmail.com")
-        println("The Customer is ${customer.toString()}")
+        println("The Customer is $customer")
         println("The email of Customer ${customer.name} is ${customer.email}")
     }
 }
