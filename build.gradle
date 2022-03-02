@@ -1,17 +1,23 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.kotlin_version = '1.4.10'
+    ext.kotlin_version = '1.5.30'
     repositories {
-        google()
-        jcenter()
         maven {
-            url 'http://repo.0d40fec.com/repository/android_google/'
+            url 'http://10.64.64.44:8081/repository/android_google/'
+        }
+
+        maven {
+            url 'http://10.64.64.44:8081/repository/android_jcenter/'
+        }
+
+        maven {
+            url 'http://10.64.64.44:8081/repository/android_maven_central/'
         }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath 'com.android.tools.build:gradle:3.6.4'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -22,13 +28,16 @@ buildscript {
 allprojects {
     repositories {
         maven {
-            url 'http://repo.0d40fec.com/repository/android_google/'
+            url 'http://10.64.64.44:8081/repository/android_google/'
         }
+
         maven {
-            url 'http://repo.0d40fec.com/repository/android_umeng_release/'
+            url 'http://10.64.64.44:8081/repository/android_jcenter/'
         }
-        jcenter()
-        mavenCentral()
+
+        maven {
+            url 'http://10.64.64.44:8081/repository/android_maven_central/'
+        }
     }
 }
 

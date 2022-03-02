@@ -1,16 +1,14 @@
 package com.panda.kotlin.samples
 
+import android.app.Activity
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import com.panda.kotlin.samples.code.chapter2.Chapter2_1_1_TWO
-import com.panda.kotlin.samples.code.chapter2.Chapter2_1_3_2_4
-import com.panda.kotlin.samples.code.chapter2.Chapter2_1_3_9
+import com.panda.kotlin.samples.code.chapter3.Chapter3_10_4_TWO
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Chapter2_1_3_9().main()
+        Chapter3_10_4_TWO().main()
     }
 }

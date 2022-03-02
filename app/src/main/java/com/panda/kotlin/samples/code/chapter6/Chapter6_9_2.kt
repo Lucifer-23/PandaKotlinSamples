@@ -13,14 +13,14 @@ class Chapter6_9_2 {
         b: ReceiveChannel<String>
     ): String =
         select<String> {
-            a.onReceiveOrNull { value ->
+            a.onReceive { value ->
                 if (value == null)
                     "Channel 'a' is closed"
                 else
                     "a -> '$value'"
             }
 
-            b.onReceiveOrNull { value ->
+            b.onReceive { value ->
                 if (value == null)
                     "Channel 'b' is closed"
                 else

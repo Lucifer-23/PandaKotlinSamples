@@ -1,6 +1,6 @@
 package com.panda.kotlin.samples.code.chapter2
 
-class Chapter2_1_7_2_THREE {
+class Chapter2_1_9_2_THREE {
 
     fun main() {
         val price = """

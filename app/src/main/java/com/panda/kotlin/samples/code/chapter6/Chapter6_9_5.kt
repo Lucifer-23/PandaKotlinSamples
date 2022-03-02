@@ -19,7 +19,7 @@ class Chapter6_9_5 {
         while (isActive) {
             val next = select<Deferred<String>?> {
                 // 从这个select中返回下一个延迟值或null
-                input.onReceiveOrNull { update ->
+                input.onReceive { update ->
                     // 替换下一个要等待的值
                     update
                 }
@@ -28,7 +28,7 @@ class Chapter6_9_5 {
                     send(value)
 
                     // 然后使用从输入通道得到的下一个延迟值
-                    input.receiveOrNull()
+                    input.receive()
                 }
             }
 
