@@ -9,6 +9,6 @@ class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Chapter8_10_2_1_TWO().main()
+        Chapter8_10_2_1_II().main()
     }
 }
