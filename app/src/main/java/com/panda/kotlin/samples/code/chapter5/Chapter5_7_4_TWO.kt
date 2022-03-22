@@ -2,7 +2,7 @@ package com.panda.kotlin.samples.code.chapter5
 
 class Chapter5_7_4_TWO {
 
-    data class StringContainer(val values: List<String>)
+    data class StringContainer                      (val values: List<String>)
 
     fun main() {
         // sampleStart
@@ -12,7 +12,7 @@ class Chapter5_7_4_TWO {
             StringContainer(listOf("seven", "eight"))
         )
 
-        println(containers.flatMap { it.values })
+        println(containers)
         // sampleEnd
     }
 }

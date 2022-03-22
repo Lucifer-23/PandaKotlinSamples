@@ -8,5 +8,8 @@ class Chapter8_10_2_1_TWO {
             println(it)
             // 如果需要可以调用更多函数
         }
+        with(numbers) {
+            println(this)
+        }
     }
 }

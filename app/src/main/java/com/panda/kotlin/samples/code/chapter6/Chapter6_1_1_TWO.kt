@@ -1,16 +1,14 @@
 package com.panda.kotlin.samples.code.chapter6
 
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import kotlin.concurrent.thread
 
 class Chapter6_1_1_TWO {
     fun main() {
         // 在后台启动一个新的协程并继续
-        GlobalScope.launch {
+        thread {
 
             // 非阻塞的等待1秒钟(默认时间单位是毫秒)
-            delay(1000L)
+            Thread.sleep(1000L)
 
             // 在延迟后打印输出
             println("World!")

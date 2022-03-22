@@ -1,6 +1,6 @@
 package com.panda.kotlin.samples.code.chapter5
 
-class Chapter5_5_3_1_ONE {
+class Chapter5_5_3_1 {
 
     fun main() {
         // sampleStart
