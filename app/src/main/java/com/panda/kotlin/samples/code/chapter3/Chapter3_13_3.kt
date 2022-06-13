@@ -2,7 +2,8 @@ package com.panda.kotlin.samples.code.chapter3
 
 interface I
 
-inline class Foo(val i: Int) : I
+@JvmInline
+value class Foo(val i: Int) : I
 
 fun asInline(f: Foo) {}
 

@@ -4,7 +4,8 @@ interface Printable {
     fun prettyPrint(): String
 }
 
-inline class Name2(val s: String) : Printable {
+@JvmInline
+value class Name2(val s: String) : Printable {
     override fun prettyPrint(): String = "Let's $s!"
 }
 

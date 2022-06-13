@@ -1,6 +1,11 @@
 package com.panda.kotlin.samples.code.chapter3
 
-inline class Name(val s: String) {
+@JvmInline
+value class Name(val s: String) {
+    init {
+        require(s.length > 0)
+    }
+
     val length: Int
         get() = s.length
 

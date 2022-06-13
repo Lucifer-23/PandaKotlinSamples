@@ -2,7 +2,8 @@ package com.panda.kotlin.samples.code.chapter3
 
 typealias NameTypeAlias = String
 
-inline class NameInlineClass(val s: String)
+@JvmInline
+value class NameInlineClass(val s: String)
 
 fun acceptString(s: String) {}
 
