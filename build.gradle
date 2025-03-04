@@ -3,17 +3,9 @@
 buildscript {
     ext.kotlin_version = '1.6.10'
     repositories {
-        maven {
-            url 'http://10.64.64.44:8081/repository/android_google/'
-        }
-
-        maven {
-            url 'http://10.64.64.44:8081/repository/android_jcenter/'
-        }
-
-        maven {
-            url 'http://10.64.64.44:8081/repository/android_maven_central/'
-        }
+        google()
+        jcenter()
+        mavenCentral()
     }
 
     dependencies {
@@ -27,17 +19,9 @@ buildscript {
 
 allprojects {
     repositories {
-        maven {
-            url 'http://10.64.64.44:8081/repository/android_google/'
-        }
-
-        maven {
-            url 'http://10.64.64.44:8081/repository/android_jcenter/'
-        }
-
-        maven {
-            url 'http://10.64.64.44:8081/repository/android_maven_central/'
-        }
+        google()
+        jcenter()
+        mavenCentral()
     }
 }
 
